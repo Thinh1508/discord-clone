@@ -10,6 +10,11 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.23.3",
+<<<<<<< Updated upstream
+=======
+    "@prisma/client": "^5.2.0",
+    "@radix-ui/react-dropdown-menu": "^2.0.5",
+>>>>>>> Stashed changes
     "@radix-ui/react-slot": "^1.0.2",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
