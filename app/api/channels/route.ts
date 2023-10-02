@@ -16,7 +16,6 @@ export async function POST(req: Request) {
     }
 
     if (!serverId) {
-      console.log(serverId)
       return new NextResponse("Sever Id missing", { status: 400 })
     }
 
