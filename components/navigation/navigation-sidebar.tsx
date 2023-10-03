@@ -49,6 +49,8 @@ export const NavigationSidebar = async () => {
           appearance={{
             elements: {
               avatarBox: "h-[42px] w-[42px]",
+              userButtonPopoverFooter: "hidden",
+              userButtonPopoverCard: "l-0",
             },
           }}
         />

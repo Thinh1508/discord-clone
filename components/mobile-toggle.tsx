@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { NavigationSidebar } from "@/components/navigation/navigation-sidebar"
 import { ServerSidebar } from "@/components/server/server-sidebar"
+import { UserButton } from "@clerk/nextjs"
 
 export const MobileToggle = ({ serverId }: { serverId: string }) => {
   return (
