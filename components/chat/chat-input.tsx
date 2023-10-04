@@ -44,7 +44,7 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
         query,
       })
 
-      axios.post(url, values)
+      await axios.post(url, values)
       form.reset()
       router.refresh()
     } catch (error) {
@@ -77,14 +77,18 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
                     />
                   </div>
                   <Input
-                    disabled={isLoading}
                     className="pl-20 pr-12 py-6 bg-zinc-200/90 dark:bg-zinc-700/75 border-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 text-zinc-600 dark:text-zinc-200"
                     placeholder={`Message ${
                       type === "conversation" ? name : "#" + name
                     }`}
                     {...field}
+                    disabled={isLoading}
                   />
-                  <button type="submit" className="absolute top-7 right-8">
+                  <button
+                    type="submit"
+                    className="absolute top-7 right-8 "
+                    disabled={isLoading}
+                  >
                     <SendHorizonal className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition" />
                   </button>
                 </div>
